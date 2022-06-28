@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
 				<a href="logout.php">Uitloggen</a>
 				<?php else: ?>
 				<a href="login.php">Inloggen</a>
-				<a href="register.php">Account aanmaken</a>
+				
 				<?php endif; ?>
 			</div>
 		</div>
