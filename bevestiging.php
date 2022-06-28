@@ -8,9 +8,18 @@
 
 	<title>Bevestiging</title>
 </head>
+<header>
+	<?php require_once 'header.php'; ?>
+</header>
 <body>
+
 	<div class="container">
-		<p>TEst</p>
+		<h1>Bedankt voor je aankoop!</h1>
+		<p>Hierzo komt wat extra tekst te staan over t huisje enzo jatoch...</p>
+		<button><a href="index.php">Terug naar home</a></button>
 	</div>
 </body>
+<footer>
+	<?php require_once 'footer.php'; ?>
+</footer>
 </html>
