@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 28 jun 2022 om 13:59
+-- Gegenereerd op: 28 jun 2022 om 13:31
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 7.4.27
 
@@ -24,29 +24,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `accommodations`
+-- Tabelstructuur voor tabel `snelkookpan`
 --
 
-CREATE TABLE `accommodations` (
+CREATE TABLE `snelkookpan` (
   `id` int(11) NOT NULL,
-  `image` varchar(48) NOT NULL,
-  `price` double NOT NULL,
-  `location` text NOT NULL,
-  `story` text NOT NULL,
-  `max_per` int(11) NOT NULL,
-  `recensies` varchar(1000) NOT NULL,
-  `available` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` text NOT NULL,
+  `name` text NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -56,15 +39,9 @@ CREATE TABLE `users` (
 --
 
 --
--- Indexen voor tabel `accommodations`
+-- Indexen voor tabel `snelkookpan`
 --
-ALTER TABLE `accommodations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexen voor tabel `users`
---
-ALTER TABLE `users`
+ALTER TABLE `snelkookpan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -72,15 +49,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT voor een tabel `accommodations`
+-- AUTO_INCREMENT voor een tabel `snelkookpan`
 --
-ALTER TABLE `accommodations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT voor een tabel `users`
---
-ALTER TABLE `users`
+ALTER TABLE `snelkookpan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
