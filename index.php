@@ -53,17 +53,20 @@
       $statement->execute();
       $accommodations = $statement->fetchAll(PDO::FETCH_ASSOC);
     ?>
-    
-    <table>
-      <tr>
-        <th>Naam</th>
-      </tr>
-      <?php foreach ($accommodations as $accommodation): ?>
-        <tr>
-          <td><?php echo $accommodation['price'];?></td>
-        </tr>
-      <?php endforeach; ?>
-    </table>
+    <div class="container">
+      <div class="house">
+        <?php foreach ($accommodations as $accommodation): ?>
+          <img src="<?php echo $accommodation['image'];?>" alt="house" width="250">
+          <p><?php echo $accommodation['name'];?></p>
+          <p><?php echo $accommodation['price'];?></p>
+          <p><?php echo $accommodation['location'];?></p>
+          <p><?php echo $accommodation['story'];?></p>
+          <p><?php echo $accommodation['max_per'];?></p>
+          <p><?php echo $accommodation['recensies'];?></p>
+          <p><?php echo $accommodation['available'];?></p>
+        <?php endforeach; ?>
+      </div>
+    </div>
   </main>
 
 
