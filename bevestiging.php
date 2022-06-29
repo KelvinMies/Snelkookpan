@@ -14,9 +14,11 @@
 <body>
 
 	<div class="container">
-		<h1>Bedankt voor je aankoop!</h1>
-		<p>Hierzo komt wat extra tekst te staan over t huisje enzo jatoch...</p>
-		<button><a href="index.php">Terug naar home</a></button>
+		<div class="bevestiging_pop_up">
+			<h1>Bedankt voor je aankoop!</h1>
+			<p>Hierzo komt wat extra tekst te staan over t huisje enzo jatoch...</p>
+			<button><a href="index.php">Terug naar home</a></button>
+		</div>
 	</div>
 </body>
 <footer>
