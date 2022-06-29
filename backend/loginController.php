@@ -18,5 +18,6 @@ if(!password_verify($password, $user['password']))
     die("Error: Dit wachtwoord is niet juist!");
 }
 $_SESSION['user_id'] = $user['id'];
+$_SESSION['user_admin'] = $user['admin'];
 header("location: ../index.php");
 ?>
