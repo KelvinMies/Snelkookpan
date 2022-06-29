@@ -143,6 +143,26 @@ main{
 
 /* ==========================BEVESTIGINGPAGINA===============================*/
 
+.bevestiging_pop_up{
+  border-style: outset;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 100px 0px 100px 0px;
+}
+.bevestiging_pop_up h1{
+  font-size: 60px;
+  margin-top: 50px;
+}
+.bevestiging_pop_up p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.bevestiging_pop_up button{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
 
 
 
