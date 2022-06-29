@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 29 jun 2022 om 13:33
--- Serverversie: 10.4.21-MariaDB
--- PHP-versie: 8.0.10
+-- Gegenereerd op: 29 jun 2022 om 14:15
+-- Serverversie: 10.4.22-MariaDB
+-- PHP-versie: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -60,15 +60,16 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` text NOT NULL,
   `email` text NOT NULL,
-  `password` text NOT NULL
+  `password` text NOT NULL,
+  `admin` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'user', 'user@user.com', 'user');
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `admin`) VALUES
+(1, 'user', 'user@user.com', 'user', NULL);
 
 --
 -- Indexen voor geëxporteerde tabellen
