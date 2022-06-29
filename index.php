@@ -48,11 +48,12 @@
   <main>
     <?php
       require_once 'backend/conn.php';
-      $query = "SELECT * FROM accommodations"
+      $query = "SELECT * FROM accommodations";
       $statement = $conn->prepare($query);
       $statement->execute();
       $accommodations = $statement->fetchAll(PDO::FETCH_ASSOC);
     ?>
+    
     <table>
       <tr>
         <th>Naam</th>
