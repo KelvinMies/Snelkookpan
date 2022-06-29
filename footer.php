@@ -5,7 +5,7 @@
 </head>
 <body >
 	<div>
-	<p>Gemaakt door Pepijn IJnema, Silvin van Haestregt, Kelvin Mies & Fabian van Dijk &copy;</p>
+	<p class="footer">Gemaakt door Pepijn IJnema, Silvin van Haestregt, Kelvin Mies & Fabian van Dijk &copy;</p>
 	</div>
 </body>
 </html>

@@ -96,14 +96,46 @@ textarea {
   margin: 0 auto;
 }
 /* ==========================HEADER===============================*/
+.header{
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  width: 100vw;
 
+}
 
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-right:10px;
+}
+.navbar a:hover{
+  color: red;
+}
 
+/* ==========================Login/Register===============================*/
+
+.form-group{
+  margin-top: ;
+  text-align: center;
+
+  width: 100vw;
+}
+main{
+  margin-top: 10%;
+}
 
 
 /* ==========================FOOTER===============================*/
 
-
+.footer{
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100vw;
+  font-size: 15px;
+}
 
 
 
