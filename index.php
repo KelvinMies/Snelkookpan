@@ -58,7 +58,7 @@
         <?php foreach ($accommodations as $accommodation): ?>
           <img src="<?php echo $accommodation['image'];?>" alt="house" width="250">
           <p><?php echo $accommodation['name'];?></p>
-          <p><?php echo $accommodation['price'];?></p>
+          <p>€<?php echo $accommodation['price'];?>,-</p>
           <p><?php echo $accommodation['location'];?></p>
           <p><?php echo $accommodation['story'];?></p>
           <p><?php echo $accommodation['max_per'];?></p>
