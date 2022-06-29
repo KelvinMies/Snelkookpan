@@ -43,6 +43,29 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <main>
+    <?php
+      require_once 'backend/conn.php';
+      $query = "SELECT * FROM accommodations"
+      $statement = $conn->prepare($query);
+      $statement->execute();
+      $accommodations = $statement->fetchAll(PDO::FETCH_ASSOC);
+    ?>
+    <table>
+      <tr>
+        <th>Naam</th>
+      </tr>
+      <?php foreach ($accommodations as $accommodation): ?>
+        <tr>
+          <td><?php echo $accommodation['price'];?></td>
+        </tr>
+      <?php endforeach; ?>
+    </table>
+  </main>
+
+
+
   <!-- Footer -->
   <footer>
     <?php require_once 'footer.php'; ?> 
