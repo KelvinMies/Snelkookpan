@@ -101,6 +101,7 @@ textarea {
   top: 0px;
   text-align: center;
   width: 100vw;
+  background-color: lightblue ;
 
 }
 
@@ -135,9 +136,15 @@ main{
   text-align: center;
   width: 100vw;
   font-size: 15px;
+  background-color: lightblue;
 }
-
-
+/*==============================Over Ons===============================*/
+.overons{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 960px ;
+}
 
 
 
