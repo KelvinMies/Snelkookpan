@@ -1,6 +1,8 @@
 <?php
     session_start();
-    if ($_SESSION['user_admin'] == "1")
+    if ($_SESSION['user_admin'] == "1"){
+      header("Location: index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +14,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+  <!-- Header -->
+  <header>
+    <?php require_once 'header.php'; ?>
+  </header>
+  <!-- Eind van header -->
+
+
+  <!-- Footer -->
+  <footer>
+    <?php require_once 'footer.php'; ?> 
+  </footer>
+  <!-- Eind van footer -->
 </body>
 </html>
